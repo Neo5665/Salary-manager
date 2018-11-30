@@ -1,6 +1,12 @@
 # Salary-manager
 #My collection
-class Employee(object):
+
+
+
+
+
+
+    class Employee(object):
     def __init__(self,empid,name,age,email,contact,job_post,addr,doj):
         self.__name=name
         self.__age=age
@@ -10,10 +16,8 @@ class Employee(object):
         self.__addr=addr
         self.empid=empid
         self.__doj=doj
-
-
-#-----------------------------------------------Getter Setter------------------------------------------------------------------------
-
+        
+        
     @property
     def email(self):
         return self.__email
@@ -373,7 +377,10 @@ class Salary(Employee):
                 Gross_Salary=basic_pay+DA+HRA+CA+MA+bonus+wages_extra_work
                 print"Gross Salary: ", Gross_Salary
 
-#----------------------------------------------------------Deductions----------------------------------------------------------------------------
+#Deductions
+
+
+
                 #Income Tax---------------------------------------------------------
                 if basic_pay>0 and basic_pay<=21000:
                     income_tax=0
