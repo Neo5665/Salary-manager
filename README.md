@@ -264,7 +264,7 @@
 
 
 
-class Salary(Employee):
+    class Salary(Employee):
 
     @staticmethod
     def Total_salary():
@@ -377,9 +377,7 @@ class Salary(Employee):
                 Gross_Salary=basic_pay+DA+HRA+CA+MA+bonus+wages_extra_work
                 print"Gross Salary: ", Gross_Salary
 
-#Deductions
-
-
+                #Deductions
 
                 #Income Tax---------------------------------------------------------
                 if basic_pay>0 and basic_pay<=21000:
@@ -536,28 +534,27 @@ class Salary(Employee):
 
 
 
-
-s=Salary
-while True:
-    print "enter your choice\n 1:Add Employee  \n 2:Search Employee \n 3:Update Employee \n 4:Delete Employee \n 5:Display Employee \n 6:Total Salary \n 7:Total No of Employees\n 8:Print Salary Slip \n 9:Exit from the Process"
-    choice=input("enter your choice:  ")
-    if choice==1:
-        s.addemp()
-    elif choice==2:
-        s.search()
-    elif choice==3:
-        s.update()
-    elif choice==4:
-        s.Delete()
-    elif choice==6:
-        s.Total_salary()
-    elif choice==7:
-        s.totl()
-    elif choice==5:
-        s.display()
-    elif choice==8:
-        s.display1()
-    elif choice==9:
-        break
-    else:
-        print "invalid choice!!!"
+    s=Salary
+    while True:
+        print "enter your choice\n 1:Add Employee  \n 2:Search Employee \n 3:Update Employee \n 4:Delete Employee \n 5:Display Employee \n 6:Total Salary \n 7:Total No of Employees\n 8:Print Salary Slip \n 9:Exit from the Process"
+        choice=input("enter your choice:  ")
+        if choice==1:
+            s.addemp()
+        elif choice==2:
+            s.search()
+        elif choice==3:
+            s.update()
+        elif choice==4:
+            s.Delete()
+        elif choice==6:
+            s.Total_salary()
+        elif choice==7:
+            s.totl()
+        elif choice==5:
+            s.display()
+        elif choice==8:
+            s.display1()
+        elif choice==9:
+            break
+        else:
+            print "invalid choice!!!"
